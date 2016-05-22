@@ -52,3 +52,4 @@ Once the data is available the R file will
 ## The Tidy Data
 
 Once the R script runs, it will create tidy.txt, which is described in CodeBook.md. The data contains the means for all data for each test subject for each activity.
+
