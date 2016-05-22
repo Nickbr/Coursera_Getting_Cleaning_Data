@@ -34,3 +34,21 @@ The R file will download the source data as a zip file which contains the follow
 
 - 'test/y_test.txt': Test labels.
 
+## The R file
+
+Once the data is available the R file will
+
+1. Set up the appropriate folders and data folder, and set he wd to the data folder to operate on the data
+1. Unzip the data (if not already unzipped)
+2. Load the activity and features data
+3. Clean up the names of the deviation columns we're interest in
+4. Load only the training and testing data we're interested in
+5. Load the activities and subject data for training and testing data and merge them with the existing training and testing data
+6. Merge the training and testing datasets into an single data set
+7. Convert the subjects and activity columns of the merged dataset into factors
+8. use melt and dcast to create the tidy data set
+9. Save the tidy dataset to a file called tidy.txt in the parent folder where the R file is stored (this is so the repo is clean and doesn't contain the source data)
+
+## The Tidy Data
+
+Once the R script runs, it will create tidy.txt, which is described in CodeBook.md. The data contains the means for all data for each test subject for each activity.
